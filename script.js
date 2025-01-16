@@ -62,39 +62,39 @@ TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Th
 GOOD LUCK 😀
 */
 
-// // 1.)
-// const [players1, players2] = game.players;
-// console.log(players1, players2);
+// 1.)
+const [players1, players2] = game.players;
+console.log(players1, players2);
 
-// // 2.)
-// const [gk, ...fieldPlayers] = game.players[0];
-// console.log(gk, fieldPlayers);
+// 2.)
+const [gk, ...fieldPlayers] = game.players[0];
+console.log(gk, fieldPlayers);
 
-// // 3.)
-// const allPlayers = [...players1, ...players2];
-// console.log(allPlayers);
+// 3.)
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
 
-// // 4.)
-// const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
-// console.log(players1Final);
+// 4.)
+const players1Final = [...players1, "Thiago", "Coutinho", "Perisic"];
+console.log(players1Final);
 
-// // 5.)
-// const { team1, x: draw, team2 } = game.odds;
-// console.log(team1, draw, team2);
+// 5.)
+const { team1, x: draw, team2 } = game.odds;
+console.log(team1, draw, team2);
 
-// // 6.)
-// function printGoals(...players) {
-//   goal = players.length;
-//   for (let i = 0; i < players.length; i++) {
-//     console.log(players[i], goal);
-//   }
-// }
-// printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
-// printGoals(...game.scored);
+// 6.)
+function printGoals(...players) {
+  goal = players.length;
+  for (let i = 0; i < players.length; i++) {
+    console.log(players[i], goal);
+  }
+}
+printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+printGoals(...game.scored);
 
-// // 7.)
-// team1 > team2 && console.log(`team1 wins the match`);
-// team1 < team2 && console.log(`team2 wins the match`);
+// 7.)
+team1 > team2 && console.log(`team1 wins the match`);
+team1 < team2 && console.log(`team2 wins the match`);
 
 ///////////////////////////////////////
 // Coding Challenge #2
